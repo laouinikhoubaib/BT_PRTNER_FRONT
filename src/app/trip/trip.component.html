@@ -1,0 +1,14 @@
+<h2>Add Trip</h2>
+<form (ngSubmit)="onSubmit()">
+<div class="form-group">
+<label>Trip Destination</label>
+<input type="text" class="form-control" id="TripDestination" [(ngModel)]="trip.TripDestination" name="TripDestination">
+
+</div>
+<div class="form-group">
+    <label>Trip Duration</label>
+    <input type="text" class="form-control" id="TripDuration" [(ngModel)]="trip.TripDuration" name="TripDuration">
+    
+    </div>
+    <button class="btn btn-success" type="submit"><i class="fa fa-database"></i> Submit</button>
+</form>
